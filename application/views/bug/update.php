@@ -41,7 +41,7 @@
   <div class="layui-form-item layui-form-text">
     <label class="layui-form-label">内容</label>
     <div class="layui-input-block">
-      <textarea  name="content" style="width:100%;height:300px;visibility:hidden;"><?php echo htmlspecialchars($model->content); ?></textarea>
+      <textarea  name="content" style="width:100%;height:300px;visibility:hidden;"><?php echo $model->content; ?></textarea>
     </div>
   </div>
   
@@ -79,7 +79,7 @@ KindEditor.ready(function(K) {
 		items : [
 			'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
 			'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-			'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+			'insertunorderedlist', '|', 'emoticons', 'image', 'link','|','code','source']
 	});
 });
 

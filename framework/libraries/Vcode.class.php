@@ -2,7 +2,7 @@
 //验证码类
 defined('IN_MS') or exit();
 class Vcode {
-	private $charset = '0123456789';//随机因子
+	private $charset = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPKRSTUVWXYZ';//随机因子
 	private $code;//验证码
 	private $codelen = 4;//验证码长度
 	private $width = 130;//宽度
@@ -18,7 +18,7 @@ class Vcode {
 		$this->width = isset($configArray['width']) ? $configArray['width'] : $this->width ;
 		$this->codelen = isset($configArray['len']) ? $configArray['len'] : $this->codelen ;
 		$this->charset = isset($configArray['num']) ? $configArray['num'] : $this->charset ;
-		$this->font = isset($configArray['font']) ? $configArray['font'] : ROOT_PATH.'/public/theme/fonts/elephant.ttf' ;
+		$this->font = isset($configArray['font']) ? $configArray['font'] : ROOT_PATH.'/public/font/elephant.ttf' ;
 		//$this->font 注意字体路径要写对，否则显示不了图片
 	}
 	//生成随机码
@@ -72,7 +72,7 @@ class Vcode {
 	}
 	//获取验证码
 	public function getCode() {
-		return strtolower($this->code);
+		return $this->code;
 	}
 }
 ?>

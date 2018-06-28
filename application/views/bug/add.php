@@ -80,7 +80,7 @@ KindEditor.ready(function(K) {
 		items : [
 			'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
 			'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-			'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+			'insertunorderedlist', '|', 'emoticons', 'image', 'link','|','source']
 	});
 });
 

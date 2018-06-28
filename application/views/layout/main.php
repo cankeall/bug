@@ -49,7 +49,7 @@
      .center{text-align: center;}
      .td-title a:visited{color: #343434;}
      .td-title a:hover{color: blue;}
-     .content img{width: 100%;}
+     /* .content img{width: 100%;} */
 	</style>
 
 </head>
@@ -62,9 +62,6 @@
 			<ul class="layui-nav layui-nav-tree" lay-filter="test">
 			<!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
 			  <li class="layui-nav-item layui-nav-itemed">
-			    <a href="javascript:;">项目列表</a>
-			  </li>
-			  <li class="layui-nav-item layui-nav-itemed">
 			    <a href="javascript:;">彩票版</a>
 			    <dl class="layui-nav-child">
 			      <dd data-sid="1"><a href="/bug/index/sid/1">前台</a></dd>
@@ -73,24 +70,16 @@
 			      <dd data-sid="4"><a href="/bug/index/sid/4">wap</a></dd>
 			    </dl>
 			  </li>
-			  <li class="layui-nav-item layui-nav-itemed">
-			    <a href="javascript:;">娱乐城版</a>
-			    <dl class="layui-nav-child">
-			      <dd data-sid="11"><a href="/bug/index/sid/11">前台</a></dd>
-			      <dd data-sid="12"><a href="/bug/index/sid/12">后台</a></dd>
-			      <dd data-sid="13"><a href="/bug/index/sid/13">代理</a></dd>
-			      <dd data-sid="14"><a href="/bug/index/sid/14">wap</a></dd>
-			    </dl>
-			  </li>
-			  <li class="layui-nav-item layui-nav-itemed">
-			    <dl class="layui-nav-child">
-			      <dd data-sid="80"><a href="/bug/index/sid/80">需求</a></dd>
-			    </dl>
-			  </li>
 
 			</ul>
+            
+            <div class="kh10"></div>
+			<ul class="layui-nav layui-nav-tree" lay-filter="test">
+			  <li class="layui-nav-item"><a href="javascript:;">项目</a></li>
+			  <li class="layui-nav-item"><a href="/admin/index">用户</a></li>
+			  <li class="layui-nav-item"><a href="javascript:;">文档</a></li>
+			</ul>
 
-			<div class="kh16"></div>
 			<div class="kh16"></div>
 
 			<div style="margin-left:63px;"><a href="/site/logout" class="layui-btn layui-btn-normal">退出</a></div>

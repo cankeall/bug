@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="/public/js/jquery.js"></script>
 	<script type="text/javascript" src="/public/layui/layui.js"></script>
 	<style type="text/css">
-		.login{width:420px;margin:0 auto; height: 300px;margin-top:100px;}
+		.login{width:620px;margin:0 auto; height: 300px;margin-top:100px;}
 		.login h2{margin-left:100px;height: 80px;line-height: 80px;}
 	</style>
 </head>
@@ -26,6 +26,16 @@
     <label class="layui-form-label">密码框</label>
     <div class="layui-input-inline">
       <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">验证码</label>
+    <div class="layui-input-inline">
+      <input type="text" name="vcode" required lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+    </div>
+    <div class="layui-input-inline">
+      <img src="/site/vcode" width="120" height="38" onclick="this.src='/site/vcode';">
     </div>
   </div>
 

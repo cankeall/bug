@@ -66,7 +66,8 @@ class Bug extends Controller {
             $priority = I('priority');
             $state = I('state');
             $touid = I('touid');
-            $content = I('content','','html_filter');
+            //$content = I('content','','html_filter');
+            $content = strip_tags($_POST['content'],'<ol><ul><li><a><img><p><span><strong><div><color><b><em><i><br><pre><code>');
 
             $data = [
             	'title'=>$title,
@@ -100,7 +101,10 @@ class Bug extends Controller {
             $priority = I('priority');
             $state = I('state');
             $touid = I('touid');
-            $content = I('content','','html_filter');
+            //$content = I('content','','html_filter');
+
+            $content = strip_tags($_POST['content'],'<ol><ul><li><a><img><p><span><strong><div><color><b><em><i><br><pre><code>');
+            $content = htmlspecialchars($content,ENT_QUOTES);
 
             $data = [
             	'title'=>$title,

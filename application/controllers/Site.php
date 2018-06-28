@@ -11,8 +11,9 @@ class Site extends Controller {
     }
 
     public function vcode(){
-       $vcode = new Vcode();
+       $vcode = new Vcode(['len'=>4,'width'=>120,'height'=>38]);
        $vcode->doimg();
+       exit(0);
     }
 
     // 登录
@@ -21,8 +22,11 @@ class Site extends Controller {
         if(!empty($_POST)){
             $username = I('username');
             $pwd = I('password');
+            $vcode = I('vcode');
+
+            if(strtolower($vcode)!=strtolower($_SESSION['vcode'])) message('验证码不对',url('site/login') );
             
-            $user = DB()->fetch('user',['username'=>$username]);
+            $user = DB()->fetch('admin',['username'=>$username]);
 
 
             if($user->pwd == md6($username,$pwd)){

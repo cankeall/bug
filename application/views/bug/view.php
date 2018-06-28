@@ -1,6 +1,9 @@
 <style type="text/css">
 	.tb-bug{margin-left:10px;margin-bottom: 10px;font-size: 11px;}
 	.viewbug .content{padding:5px 16px 0;}
+
+	ul{padding-left: 40px;}
+	li{list-style: disc;}
 </style>
 <div class="layui-main viewbug">
 	<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
@@ -40,5 +43,5 @@
 		</tr>
 	</table>
 
-	<div class="content"><?php echo $model->content;?></div>
+	<div class="content"><?php echo htmlspecialchars_decode($model->content);?></div>
 </div>
