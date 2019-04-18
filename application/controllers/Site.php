@@ -26,8 +26,7 @@ class Site extends Controller {
 
             if(strtolower($vcode)!=strtolower($_SESSION['vcode'])) message('验证码不对',url('site/login') );
             
-            $user = DB()->fetch('admin',['username'=>$username]);
-
+            $user = DB()->fetch('user',['username'=>$username]);
 
             if($user->pwd == md6($username,$pwd)){
                 if($user->state!=1){

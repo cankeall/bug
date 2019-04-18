@@ -62,12 +62,10 @@
 			<ul class="layui-nav layui-nav-tree" lay-filter="test">
 			<!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
 			  <li class="layui-nav-item layui-nav-itemed">
-			    <a href="javascript:;">彩票版</a>
+			    <a href="javascript:;">itbook</a>
 			    <dl class="layui-nav-child">
 			      <dd data-sid="1"><a href="/bug/index/sid/1">前台</a></dd>
 			      <dd data-sid="2"><a href="/bug/index/sid/2">后台</a></dd>
-			      <dd data-sid="3"><a href="/bug/index/sid/3">代理</a></dd>
-			      <dd data-sid="4"><a href="/bug/index/sid/4">wap</a></dd>
 			    </dl>
 			  </li>
 
@@ -76,7 +74,7 @@
             <div class="kh10"></div>
 			<ul class="layui-nav layui-nav-tree" lay-filter="test">
 			  <li class="layui-nav-item"><a href="javascript:;">项目</a></li>
-			  <li class="layui-nav-item"><a href="/admin/index">用户</a></li>
+			  <li class="layui-nav-item"><a href="/user/index">用户</a></li>
 			  <li class="layui-nav-item"><a href="javascript:;">文档</a></li>
 			</ul>
 

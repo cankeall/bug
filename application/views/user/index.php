@@ -10,7 +10,7 @@
 <div class="kh10"></div>
 
 <div class="layui-row">
-<a class="layui-btn" href="/admin/add">
+<a class="layui-btn" href="/user/add">
   <i class="layui-icon">&#xe608;</i> 添加
 </a>
 </div>
@@ -43,8 +43,8 @@
 		      <td class="td-title"><?=$v->username?></td>
           <td><?=$stateArr[$v->state]?></td>
 		      <td>
-					<a class="layui-btn layui-btn-xs" href="<?php echo url('admin/update',['id'=>$v->id]); ?>">编辑</a>
-					<a class="layui-btn layui-btn-danger layui-btn-xs" href="<?php echo url('admin/delete',['id'=>$v->id]); ?>">删除</a>
+					<a class="layui-btn layui-btn-xs" href="<?php echo url('user/update',['id'=>$v->id]); ?>">编辑</a>
+					<a class="layui-btn layui-btn-danger layui-btn-xs" href="<?php echo url('user/delete',['id'=>$v->id]); ?>">删除</a>
 		      </td>
 		    </tr>
   		<?php endforeach ?>
