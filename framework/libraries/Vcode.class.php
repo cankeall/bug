@@ -18,7 +18,7 @@ class Vcode {
 		$this->width = isset($configArray['width']) ? $configArray['width'] : $this->width ;
 		$this->codelen = isset($configArray['len']) ? $configArray['len'] : $this->codelen ;
 		$this->charset = isset($configArray['num']) ? $configArray['num'] : $this->charset ;
-		$this->font = isset($configArray['font']) ? $configArray['font'] : ROOT_PATH.'/public/font/elephant.ttf' ;
+		$this->font = isset($configArray['font']) ? $configArray['font'] : ROOT_PATH.'/public/font/Elephant.ttf' ;
 		//$this->font 注意字体路径要写对，否则显示不了图片
 	}
 	//生成随机码
